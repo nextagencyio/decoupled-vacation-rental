@@ -1,0 +1,240 @@
+{
+  "data": {
+    "nodeProperties": {
+      "__typename": "NodePropertyConnection",
+      "nodes": [
+        {
+          "__typename": "NodeProperty",
+          "id": "property-sunset-villa",
+          "title": "Sunset Villa",
+          "path": "/properties/sunset-villa",
+          "body": {
+            "processed": "<p>Perched on a bluff overlooking the Gulf of Mexico, Sunset Villa offers panoramic ocean views from nearly every room. This beautifully renovated four-bedroom villa features a private heated pool, gourmet kitchen, and a wraparound deck that is the perfect setting for unforgettable sunsets.</p><h2>Interior</h2><p>The open-concept living area features floor-to-ceiling windows, comfortable coastal furnishings, and a chef's kitchen with stainless steel appliances and granite countertops. The primary suite includes a king bed, en-suite bathroom with soaking tub, and a private balcony.</p><h2>Outdoor Living</h2><p>The private heated pool and hot tub are surrounded by lush tropical landscaping. A covered outdoor dining area with a built-in grill makes entertaining a breeze. A private boardwalk leads directly to the beach.</p>",
+            "summary": "Perched on a bluff overlooking the Gulf of Mexico, Sunset Villa offers panoramic ocean views from nearly every room. This beautifully renovated four-bedroom villa features a private heated pool, gourm"
+          },
+          "propertyType": [
+            {
+              "id": "Villa",
+              "name": "Villa"
+            }
+          ],
+          "nightlyRate": "From $395/night",
+          "bedrooms": "4",
+          "bathrooms": "3.5",
+          "maxGuests": "10",
+          "propertyFeatures": [
+            "Ocean view",
+            "Private pool",
+            "Hot tub",
+            "Beach access",
+            "Gourmet kitchen",
+            "Outdoor grill",
+            "WiFi",
+            "Smart TV"
+          ],
+          "locationArea": "Gulf Bluffs",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&q=80",
+            "alt": "Luxury villa with ocean view and pool",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "featured": true
+        },
+        {
+          "__typename": "NodeProperty",
+          "id": "property-seashell-cottage",
+          "title": "Seashell Cottage",
+          "path": "/properties/seashell-cottage",
+          "body": {
+            "processed": "<p>Charming and cozy, Seashell Cottage is a classic beach bungalow just two blocks from the sand. With its white picket fence, front porch rocking chairs, and cheerful coastal decor, this two-bedroom cottage feels like a home away from home.</p><h2>Interior</h2><p>The bright, airy interior features hardwood floors, a fully equipped kitchen, and a living room with a sleeper sofa for extra guests. Both bedrooms have queen beds and ceiling fans. The screened-in back porch is perfect for morning coffee or evening reading.</p><h2>Location</h2><p>Located in the heart of the village, Seashell Cottage is within walking distance of restaurants, shops, the ice cream parlor, and the Saturday farmers market. Beach chairs, umbrellas, and a beach wagon are provided.</p>",
+            "summary": "Charming and cozy, Seashell Cottage is a classic beach bungalow just two blocks from the sand. With its white picket fence, front porch rocking chairs, and cheerful coastal decor, this two-bedroom cot"
+          },
+          "propertyType": [
+            {
+              "id": "Cottage",
+              "name": "Cottage"
+            }
+          ],
+          "nightlyRate": "From $175/night",
+          "bedrooms": "2",
+          "bathrooms": "1",
+          "maxGuests": "6",
+          "propertyFeatures": [
+            "Walk to beach",
+            "Screened porch",
+            "Full kitchen",
+            "Beach gear provided",
+            "Pet friendly",
+            "WiFi",
+            "Washer/dryer"
+          ],
+          "locationArea": "Beach Village",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=800&q=80",
+            "alt": "Charming beach cottage with white picket fence",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "featured": true
+        },
+        {
+          "__typename": "NodeProperty",
+          "id": "property-oceanview-condo",
+          "title": "Oceanview Condo at Harbor Point",
+          "path": "/properties/oceanview-condo",
+          "body": {
+            "processed": "<p>This modern, stylish three-bedroom condo sits on the top floor of the Harbor Point complex, offering sweeping views of the ocean and harbor. Recently updated with designer finishes, the condo combines contemporary comfort with coastal elegance.</p><h2>Interior</h2><p>The condo features an open floor plan with a gourmet kitchen, quartz countertops, and a large island with bar seating. The living area opens to a generous balcony overlooking the harbor. All three bedrooms have en-suite bathrooms.</p><h2>Building Amenities</h2><p>Guests enjoy access to Harbor Point's resort-style amenities including a pool, hot tub, fitness center, and secure garage parking. The harbor boardwalk with shops and restaurants is right outside the building.</p>",
+            "summary": "This modern, stylish three-bedroom condo sits on the top floor of the Harbor Point complex, offering sweeping views of the ocean and harbor. Recently updated with designer finishes, the condo combines"
+          },
+          "propertyType": [
+            {
+              "id": "Condo",
+              "name": "Condo"
+            }
+          ],
+          "nightlyRate": "From $275/night",
+          "bedrooms": "3",
+          "bathrooms": "3",
+          "maxGuests": "8",
+          "propertyFeatures": [
+            "Ocean view",
+            "Harbor view",
+            "Building pool",
+            "Fitness center",
+            "Secure parking",
+            "Elevator",
+            "WiFi",
+            "Balcony"
+          ],
+          "locationArea": "Harbor Point",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&q=80",
+            "alt": "Modern coastal condo with harbor views",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "featured": true
+        },
+        {
+          "__typename": "NodeProperty",
+          "id": "property-dune-house",
+          "title": "The Dune House",
+          "path": "/properties/dune-house",
+          "body": {
+            "processed": "<p>The Dune House is a spacious five-bedroom beachfront home designed for large families and group getaways. With direct beach access, multiple living areas, and a game room, there is space for everyone to spread out and relax.</p><h2>Interior</h2><p>Three levels of living space include a great room with cathedral ceilings, a second-floor media room with a 75-inch TV, and a ground-level game room with pool table, foosball, and arcade games. The kitchen is equipped for large-group cooking with dual ovens and a 6-burner range.</p><h2>Outdoor Space</h2><p>A large deck with outdoor furniture overlooks the dunes and ocean. A private walkover provides direct beach access. An outdoor shower station makes coming back from the beach easy.</p>",
+            "summary": "The Dune House is a spacious five-bedroom beachfront home designed for large families and group getaways. With direct beach access, multiple living areas, and a game room, there is space for everyone "
+          },
+          "propertyType": [
+            {
+              "id": "Beach House",
+              "name": "Beach House"
+            }
+          ],
+          "nightlyRate": "From $525/night",
+          "bedrooms": "5",
+          "bathrooms": "4",
+          "maxGuests": "14",
+          "propertyFeatures": [
+            "Beachfront",
+            "Direct beach access",
+            "Game room",
+            "Multiple living areas",
+            "Outdoor shower",
+            "Large deck",
+            "WiFi",
+            "Washer/dryer"
+          ],
+          "locationArea": "Dune Ridge",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=800&q=80",
+            "alt": "Large beachfront house on the dunes",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "featured": false
+        }
+      ]
+    }
+  }
+}

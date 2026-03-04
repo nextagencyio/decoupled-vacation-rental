@@ -1,0 +1,59 @@
+{
+  "data": {
+    "nodeHomepages": {
+      "__typename": "NodeHomepageConnection",
+      "nodes": [
+        {
+          "__typename": "NodeHomepage",
+          "id": "homepage",
+          "title": "Coastal Getaways Vacation Rentals",
+          "path": "/homepage",
+          "heroTitle": "Your Perfect Beach Escape",
+          "heroSubtitle": "Coastal Getaways Vacation Rentals",
+          "heroDescription": {
+            "processed": "<p>Discover handpicked vacation homes steps from the shore. From cozy beachside cottages to luxury oceanfront villas, find your ideal retreat along the beautiful Gulf Coast.</p>",
+            "summary": "Discover handpicked vacation homes steps from the shore. From cozy beachside cottages to luxury oceanfront villas, find your ideal retreat along the beautiful Gulf Coast."
+          },
+          "statsItems": [
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-properties",
+              "title": "",
+              "number": "24",
+              "label": "Properties"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-guests",
+              "title": "",
+              "number": "8,500+",
+              "label": "Happy Guests"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-rating",
+              "title": "",
+              "number": "4.9",
+              "label": "Average Rating"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-beach",
+              "title": "",
+              "number": "2 min",
+              "label": "To the Beach"
+            }
+          ],
+          "featuredItemsTitle": "Featured Properties",
+          "ctaTitle": "Start Planning Your Getaway",
+          "ctaDescription": {
+            "processed": "<p>Browse our curated collection of vacation homes, check availability, and book directly with us for the best rates and personalized concierge service.</p>",
+            "summary": "Browse our curated collection of vacation homes, check availability, and book directly with us for the best rates and personalized concierge service."
+          },
+          "ctaPrimary": "View All Properties",
+          "ctaSecondary": "Contact Us"
+        }
+      ]
+    }
+  }
+}

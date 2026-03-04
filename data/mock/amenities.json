@@ -1,0 +1,141 @@
+{
+  "data": {
+    "nodeAmenities": {
+      "__typename": "NodeAmenityConnection",
+      "nodes": [
+        {
+          "__typename": "NodeAmenity",
+          "id": "amenity-pool-complex",
+          "title": "Community Pool & Hot Tub",
+          "path": "/amenities/community-pool",
+          "body": {
+            "processed": "<p>Our resort-style community pool complex is available to guests staying at select properties. The heated pool features a zero-entry shallow end for young children, lap lanes, and a separate adults-only hot tub area. Comfortable loungers, shade cabanas, and a poolside refreshment station are all complimentary.</p><h2>Pool Rules</h2><ul><li>Open daily from 8:00 AM to 10:00 PM</li><li>Children under 14 must be accompanied by an adult</li><li>No glass containers in the pool area</li><li>Towels provided poolside</li></ul>",
+            "summary": "Our resort-style community pool complex is available to guests staying at select properties. The heated pool features a zero-entry shallow end for young children, lap lanes, and a separate adults-only"
+          },
+          "amenityCategory": [
+            {
+              "id": "Pool & Spa",
+              "name": "Pool & Spa"
+            }
+          ],
+          "availability": "Daily 8:00 AM - 10:00 PM, year-round (heated)",
+          "included": true,
+          "image": {
+            "url": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&q=80",
+            "alt": "Resort-style swimming pool with loungers and palm trees",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeAmenity",
+          "id": "amenity-bike-rental",
+          "title": "Complimentary Bike Rentals",
+          "path": "/amenities/bike-rentals",
+          "body": {
+            "processed": "<p>Explore the coastline on two wheels with our complimentary bike rental program. Each property includes access to beach cruiser bicycles, perfect for riding along the boardwalk, visiting local shops, or taking a scenic ride on the coastal bike path.</p><h2>Details</h2><ul><li>Beach cruiser bikes available for adults and children</li><li>Helmets, locks, and basket accessories included</li><li>Bikes delivered to your property on check-in day</li><li>8-mile paved coastal bike path right outside your door</li></ul>",
+            "summary": "Explore the coastline on two wheels with our complimentary bike rental program. Each property includes access to beach cruiser bicycles, perfect for riding along the boardwalk, visiting local shops, o"
+          },
+          "amenityCategory": [
+            {
+              "id": "Recreation",
+              "name": "Recreation"
+            }
+          ],
+          "availability": "Available throughout your stay",
+          "included": true,
+          "image": {
+            "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
+            "alt": "Beach cruiser bicycles lined up near the boardwalk",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeAmenity",
+          "id": "amenity-concierge",
+          "title": "Personal Concierge Service",
+          "path": "/amenities/concierge-services",
+          "body": {
+            "processed": "<p>Our dedicated concierge team is available to help make your vacation effortless and memorable. From restaurant reservations to activity bookings, grocery delivery to special occasion planning, we handle the details so you can focus on relaxing.</p><h2>Services Include</h2><ul><li>Restaurant reservations at top local dining spots</li><li>Activity and excursion bookings (fishing charters, dolphin cruises, etc.)</li><li>Pre-arrival grocery stocking for your kitchen</li><li>Beach bonfire setup and catering</li><li>In-home chef and private dining experiences</li><li>Special occasion decorations and celebrations</li></ul>",
+            "summary": "Our dedicated concierge team is available to help make your vacation effortless and memorable. From restaurant reservations to activity bookings, grocery delivery to special occasion planning, we hand"
+          },
+          "amenityCategory": [
+            {
+              "id": "Concierge Services",
+              "name": "Concierge Services"
+            }
+          ],
+          "availability": "Monday - Saturday 8:00 AM - 8:00 PM",
+          "included": true,
+          "image": {
+            "url": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&q=80",
+            "alt": "Concierge team member helping a guest",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

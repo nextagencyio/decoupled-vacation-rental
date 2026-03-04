@@ -1,0 +1,499 @@
+{
+  "model": [
+    {
+      "bundle": "homepage",
+      "label": "Homepage",
+      "description": "Landing page with hero section, stats, and call-to-action areas for the vacation rental",
+      "fields": [
+        {
+          "id": "hero_title",
+          "label": "Hero Title",
+          "type": "string",
+          "description": "Main headline in the hero section"
+        },
+        {
+          "id": "hero_subtitle",
+          "label": "Hero Subtitle",
+          "type": "string",
+          "description": "Secondary text below the hero title"
+        },
+        {
+          "id": "hero_description",
+          "label": "Hero Description",
+          "type": "text",
+          "description": "Longer descriptive text for the hero section"
+        },
+        {
+          "id": "stats_items",
+          "label": "Statistics",
+          "type": "paragraph(stat_item)[]",
+          "description": "Key statistics about the vacation rental"
+        },
+        {
+          "id": "featured_items_title",
+          "label": "Featured Items Title",
+          "type": "string",
+          "description": "Title for the featured properties section"
+        },
+        {
+          "id": "cta_title",
+          "label": "CTA Title",
+          "type": "string",
+          "description": "Call-to-action section title"
+        },
+        {
+          "id": "cta_description",
+          "label": "CTA Description",
+          "type": "text",
+          "description": "Call-to-action descriptive text"
+        },
+        {
+          "id": "cta_primary",
+          "label": "Primary CTA",
+          "type": "string",
+          "description": "Primary call-to-action button text"
+        },
+        {
+          "id": "cta_secondary",
+          "label": "Secondary CTA",
+          "type": "string",
+          "description": "Secondary call-to-action button text"
+        }
+      ]
+    },
+    {
+      "bundle": "property",
+      "label": "Property",
+      "description": "Vacation rental property listing with details, pricing, and amenities",
+      "body": true,
+      "fields": [
+        {
+          "id": "property_type",
+          "label": "Property Type",
+          "type": "term(property_types)[]",
+          "description": "Type of rental property"
+        },
+        {
+          "id": "nightly_rate",
+          "label": "Nightly Rate",
+          "type": "string",
+          "description": "Starting price per night"
+        },
+        {
+          "id": "bedrooms",
+          "label": "Bedrooms",
+          "type": "string",
+          "description": "Number of bedrooms"
+        },
+        {
+          "id": "bathrooms",
+          "label": "Bathrooms",
+          "type": "string",
+          "description": "Number of bathrooms"
+        },
+        {
+          "id": "max_guests",
+          "label": "Max Guests",
+          "type": "string",
+          "description": "Maximum number of guests"
+        },
+        {
+          "id": "property_features",
+          "label": "Features",
+          "type": "string[]",
+          "description": "Key features and amenities of the property"
+        },
+        {
+          "id": "location_area",
+          "label": "Location Area",
+          "type": "string",
+          "description": "Neighborhood or area where the property is located"
+        },
+        {
+          "id": "image",
+          "label": "Property Image",
+          "type": "image",
+          "description": "Main image of the property"
+        },
+        {
+          "id": "featured",
+          "label": "Featured",
+          "type": "bool",
+          "description": "Whether this property is featured"
+        }
+      ]
+    },
+    {
+      "bundle": "amenity",
+      "label": "Amenity",
+      "description": "Shared amenity or service available to guests",
+      "body": true,
+      "fields": [
+        {
+          "id": "amenity_category",
+          "label": "Category",
+          "type": "term(amenity_categories)[]",
+          "description": "Amenity category"
+        },
+        {
+          "id": "availability",
+          "label": "Availability",
+          "type": "string",
+          "description": "When the amenity is available"
+        },
+        {
+          "id": "included",
+          "label": "Included with Stay",
+          "type": "bool",
+          "description": "Whether this amenity is included with booking"
+        },
+        {
+          "id": "image",
+          "label": "Amenity Image",
+          "type": "image",
+          "description": "Image of the amenity"
+        }
+      ]
+    },
+    {
+      "bundle": "attraction",
+      "label": "Local Attraction",
+      "description": "Nearby attraction, restaurant, or point of interest for guests",
+      "body": true,
+      "fields": [
+        {
+          "id": "attraction_type",
+          "label": "Attraction Type",
+          "type": "term(attraction_types)[]",
+          "description": "Type of attraction"
+        },
+        {
+          "id": "distance",
+          "label": "Distance",
+          "type": "string",
+          "description": "Distance from properties"
+        },
+        {
+          "id": "address",
+          "label": "Address",
+          "type": "string",
+          "description": "Physical address"
+        },
+        {
+          "id": "image",
+          "label": "Attraction Image",
+          "type": "image",
+          "description": "Image of the attraction"
+        }
+      ]
+    },
+    {
+      "bundle": "page",
+      "label": "Basic Page",
+      "description": "Static content pages for about, policies, etc.",
+      "body": true,
+      "fields": []
+    },
+    {
+      "entity": "paragraph",
+      "bundle": "stat_item",
+      "label": "Statistic Item",
+      "description": "A single statistic with number and label",
+      "fields": [
+        {
+          "id": "number",
+          "label": "Number",
+          "type": "string!",
+          "description": "The statistic number or value (required)"
+        },
+        {
+          "id": "label",
+          "label": "Label",
+          "type": "string!",
+          "description": "Description label for the statistic (required)"
+        }
+      ]
+    }
+  ],
+  "taxonomies": [
+    {
+      "vocabulary": "property_types",
+      "label": "Property Types",
+      "terms": ["Beach House", "Cottage", "Condo", "Villa", "Cabin", "Townhouse"]
+    },
+    {
+      "vocabulary": "amenity_categories",
+      "label": "Amenity Categories",
+      "terms": ["Pool & Spa", "Recreation", "Beach & Water", "Concierge Services", "Family", "Fitness"]
+    },
+    {
+      "vocabulary": "attraction_types",
+      "label": "Attraction Types",
+      "terms": ["Beach", "Restaurant", "Shopping", "Outdoor Activity", "Historic Site", "Nightlife", "Family Fun"]
+    }
+  ],
+  "content": [
+    {
+      "id": "stat-properties",
+      "type": "paragraph.stat_item",
+      "values": {
+        "number": "24",
+        "label": "Properties"
+      }
+    },
+    {
+      "id": "stat-guests",
+      "type": "paragraph.stat_item",
+      "values": {
+        "number": "8,500+",
+        "label": "Happy Guests"
+      }
+    },
+    {
+      "id": "stat-rating",
+      "type": "paragraph.stat_item",
+      "values": {
+        "number": "4.9",
+        "label": "Average Rating"
+      }
+    },
+    {
+      "id": "stat-beach",
+      "type": "paragraph.stat_item",
+      "values": {
+        "number": "2 min",
+        "label": "To the Beach"
+      }
+    },
+    {
+      "id": "homepage",
+      "type": "node.homepage",
+      "path": "/homepage",
+      "values": {
+        "title": "Coastal Getaways Vacation Rentals",
+        "hero_title": "Your Perfect Beach Escape",
+        "hero_subtitle": "Coastal Getaways Vacation Rentals",
+        "hero_description": "<p>Discover handpicked vacation homes steps from the shore. From cozy beachside cottages to luxury oceanfront villas, find your ideal retreat along the beautiful Gulf Coast.</p>",
+        "stats_items": [
+          "@stat-properties",
+          "@stat-guests",
+          "@stat-rating",
+          "@stat-beach"
+        ],
+        "featured_items_title": "Featured Properties",
+        "cta_title": "Start Planning Your Getaway",
+        "cta_description": "<p>Browse our curated collection of vacation homes, check availability, and book directly with us for the best rates and personalized concierge service.</p>",
+        "cta_primary": "View All Properties",
+        "cta_secondary": "Contact Us"
+      }
+    },
+    {
+      "id": "property-sunset-villa",
+      "type": "node.property",
+      "path": "/properties/sunset-villa",
+      "values": {
+        "title": "Sunset Villa",
+        "body": "<p>Perched on a bluff overlooking the Gulf of Mexico, Sunset Villa offers panoramic ocean views from nearly every room. This beautifully renovated four-bedroom villa features a private heated pool, gourmet kitchen, and a wraparound deck that is the perfect setting for unforgettable sunsets.</p><h2>Interior</h2><p>The open-concept living area features floor-to-ceiling windows, comfortable coastal furnishings, and a chef's kitchen with stainless steel appliances and granite countertops. The primary suite includes a king bed, en-suite bathroom with soaking tub, and a private balcony.</p><h2>Outdoor Living</h2><p>The private heated pool and hot tub are surrounded by lush tropical landscaping. A covered outdoor dining area with a built-in grill makes entertaining a breeze. A private boardwalk leads directly to the beach.</p>",
+        "property_type": ["Villa"],
+        "nightly_rate": "From $395/night",
+        "bedrooms": "4",
+        "bathrooms": "3.5",
+        "max_guests": "10",
+        "property_features": ["Ocean view", "Private pool", "Hot tub", "Beach access", "Gourmet kitchen", "Outdoor grill", "WiFi", "Smart TV"],
+        "location_area": "Gulf Bluffs",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&q=80",
+          "alt": "Luxury villa with ocean view and pool",
+          "title": "Sunset Villa"
+        },
+        "featured": true
+      }
+    },
+    {
+      "id": "property-seashell-cottage",
+      "type": "node.property",
+      "path": "/properties/seashell-cottage",
+      "values": {
+        "title": "Seashell Cottage",
+        "body": "<p>Charming and cozy, Seashell Cottage is a classic beach bungalow just two blocks from the sand. With its white picket fence, front porch rocking chairs, and cheerful coastal decor, this two-bedroom cottage feels like a home away from home.</p><h2>Interior</h2><p>The bright, airy interior features hardwood floors, a fully equipped kitchen, and a living room with a sleeper sofa for extra guests. Both bedrooms have queen beds and ceiling fans. The screened-in back porch is perfect for morning coffee or evening reading.</p><h2>Location</h2><p>Located in the heart of the village, Seashell Cottage is within walking distance of restaurants, shops, the ice cream parlor, and the Saturday farmers market. Beach chairs, umbrellas, and a beach wagon are provided.</p>",
+        "property_type": ["Cottage"],
+        "nightly_rate": "From $175/night",
+        "bedrooms": "2",
+        "bathrooms": "1",
+        "max_guests": "6",
+        "property_features": ["Walk to beach", "Screened porch", "Full kitchen", "Beach gear provided", "Pet friendly", "WiFi", "Washer/dryer"],
+        "location_area": "Beach Village",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=800&q=80",
+          "alt": "Charming beach cottage with white picket fence",
+          "title": "Seashell Cottage"
+        },
+        "featured": true
+      }
+    },
+    {
+      "id": "property-oceanview-condo",
+      "type": "node.property",
+      "path": "/properties/oceanview-condo",
+      "values": {
+        "title": "Oceanview Condo at Harbor Point",
+        "body": "<p>This modern, stylish three-bedroom condo sits on the top floor of the Harbor Point complex, offering sweeping views of the ocean and harbor. Recently updated with designer finishes, the condo combines contemporary comfort with coastal elegance.</p><h2>Interior</h2><p>The condo features an open floor plan with a gourmet kitchen, quartz countertops, and a large island with bar seating. The living area opens to a generous balcony overlooking the harbor. All three bedrooms have en-suite bathrooms.</p><h2>Building Amenities</h2><p>Guests enjoy access to Harbor Point's resort-style amenities including a pool, hot tub, fitness center, and secure garage parking. The harbor boardwalk with shops and restaurants is right outside the building.</p>",
+        "property_type": ["Condo"],
+        "nightly_rate": "From $275/night",
+        "bedrooms": "3",
+        "bathrooms": "3",
+        "max_guests": "8",
+        "property_features": ["Ocean view", "Harbor view", "Building pool", "Fitness center", "Secure parking", "Elevator", "WiFi", "Balcony"],
+        "location_area": "Harbor Point",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&q=80",
+          "alt": "Modern coastal condo with harbor views",
+          "title": "Oceanview Condo"
+        },
+        "featured": true
+      }
+    },
+    {
+      "id": "property-dune-house",
+      "type": "node.property",
+      "path": "/properties/dune-house",
+      "values": {
+        "title": "The Dune House",
+        "body": "<p>The Dune House is a spacious five-bedroom beachfront home designed for large families and group getaways. With direct beach access, multiple living areas, and a game room, there is space for everyone to spread out and relax.</p><h2>Interior</h2><p>Three levels of living space include a great room with cathedral ceilings, a second-floor media room with a 75-inch TV, and a ground-level game room with pool table, foosball, and arcade games. The kitchen is equipped for large-group cooking with dual ovens and a 6-burner range.</p><h2>Outdoor Space</h2><p>A large deck with outdoor furniture overlooks the dunes and ocean. A private walkover provides direct beach access. An outdoor shower station makes coming back from the beach easy.</p>",
+        "property_type": ["Beach House"],
+        "nightly_rate": "From $525/night",
+        "bedrooms": "5",
+        "bathrooms": "4",
+        "max_guests": "14",
+        "property_features": ["Beachfront", "Direct beach access", "Game room", "Multiple living areas", "Outdoor shower", "Large deck", "WiFi", "Washer/dryer"],
+        "location_area": "Dune Ridge",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=800&q=80",
+          "alt": "Large beachfront house on the dunes",
+          "title": "The Dune House"
+        },
+        "featured": false
+      }
+    },
+    {
+      "id": "amenity-pool-complex",
+      "type": "node.amenity",
+      "path": "/amenities/community-pool",
+      "values": {
+        "title": "Community Pool & Hot Tub",
+        "body": "<p>Our resort-style community pool complex is available to guests staying at select properties. The heated pool features a zero-entry shallow end for young children, lap lanes, and a separate adults-only hot tub area. Comfortable loungers, shade cabanas, and a poolside refreshment station are all complimentary.</p><h2>Pool Rules</h2><ul><li>Open daily from 8:00 AM to 10:00 PM</li><li>Children under 14 must be accompanied by an adult</li><li>No glass containers in the pool area</li><li>Towels provided poolside</li></ul>",
+        "amenity_category": ["Pool & Spa"],
+        "availability": "Daily 8:00 AM - 10:00 PM, year-round (heated)",
+        "included": true,
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&q=80",
+          "alt": "Resort-style swimming pool with loungers and palm trees",
+          "title": "Community Pool"
+        }
+      }
+    },
+    {
+      "id": "amenity-bike-rental",
+      "type": "node.amenity",
+      "path": "/amenities/bike-rentals",
+      "values": {
+        "title": "Complimentary Bike Rentals",
+        "body": "<p>Explore the coastline on two wheels with our complimentary bike rental program. Each property includes access to beach cruiser bicycles, perfect for riding along the boardwalk, visiting local shops, or taking a scenic ride on the coastal bike path.</p><h2>Details</h2><ul><li>Beach cruiser bikes available for adults and children</li><li>Helmets, locks, and basket accessories included</li><li>Bikes delivered to your property on check-in day</li><li>8-mile paved coastal bike path right outside your door</li></ul>",
+        "amenity_category": ["Recreation"],
+        "availability": "Available throughout your stay",
+        "included": true,
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
+          "alt": "Beach cruiser bicycles lined up near the boardwalk",
+          "title": "Bike Rentals"
+        }
+      }
+    },
+    {
+      "id": "amenity-concierge",
+      "type": "node.amenity",
+      "path": "/amenities/concierge-services",
+      "values": {
+        "title": "Personal Concierge Service",
+        "body": "<p>Our dedicated concierge team is available to help make your vacation effortless and memorable. From restaurant reservations to activity bookings, grocery delivery to special occasion planning, we handle the details so you can focus on relaxing.</p><h2>Services Include</h2><ul><li>Restaurant reservations at top local dining spots</li><li>Activity and excursion bookings (fishing charters, dolphin cruises, etc.)</li><li>Pre-arrival grocery stocking for your kitchen</li><li>Beach bonfire setup and catering</li><li>In-home chef and private dining experiences</li><li>Special occasion decorations and celebrations</li></ul>",
+        "amenity_category": ["Concierge Services"],
+        "availability": "Monday - Saturday 8:00 AM - 8:00 PM",
+        "included": true,
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&q=80",
+          "alt": "Concierge team member helping a guest",
+          "title": "Concierge Service"
+        }
+      }
+    },
+    {
+      "id": "attraction-sunset-beach",
+      "type": "node.attraction",
+      "path": "/attractions/sunset-beach",
+      "values": {
+        "title": "Sunset Beach",
+        "body": "<p>Sunset Beach is the crown jewel of the Gulf Coast with three miles of pristine white sand and crystal-clear turquoise water. The beach is consistently rated among the top beaches in the country for its clean sand, gentle waves, and spectacular sunsets.</p><h2>Beach Activities</h2><ul><li>Swimming and wading in gentle surf</li><li>Shell collecting along the shoreline</li><li>Paddleboarding and kayak rentals available on the beach</li><li>Beach volleyball courts at the public access points</li><li>Seasonal lifeguard service from Memorial Day to Labor Day</li></ul>",
+        "attraction_type": ["Beach"],
+        "distance": "2-minute walk from most properties",
+        "address": "Sunset Beach Public Access, Gulf Shore Drive",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80",
+          "alt": "Pristine white sand beach with turquoise water",
+          "title": "Sunset Beach"
+        }
+      }
+    },
+    {
+      "id": "attraction-harbor-dining",
+      "type": "node.attraction",
+      "path": "/attractions/harbor-dining-district",
+      "values": {
+        "title": "Harbor Dining District",
+        "body": "<p>The Harbor Dining District is home to over a dozen waterfront restaurants offering everything from fresh-caught seafood and craft cocktails to wood-fired pizza and gourmet ice cream. Watch the fishing boats come in as you dine on the freshest Gulf seafood.</p><h2>Must-Try Restaurants</h2><ul><li><strong>The Catch</strong> - Fresh seafood with harbor views, known for grouper tacos</li><li><strong>Dockside Grill</strong> - Casual waterfront dining with live music nightly</li><li><strong>Bella Mare</strong> - Upscale Italian with a raw bar and extensive wine list</li><li><strong>Scoops</strong> - Artisan ice cream with unique coastal flavors</li></ul>",
+        "attraction_type": ["Restaurant"],
+        "distance": "5-minute drive or 15-minute bike ride",
+        "address": "Harbor Point Boardwalk, 100-200 Marina Drive",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&q=80",
+          "alt": "Waterfront restaurants along the harbor at sunset",
+          "title": "Harbor Dining District"
+        }
+      }
+    },
+    {
+      "id": "attraction-nature-preserve",
+      "type": "node.attraction",
+      "path": "/attractions/coastal-nature-preserve",
+      "values": {
+        "title": "Coastal Nature Preserve",
+        "body": "<p>The Coastal Nature Preserve protects 1,200 acres of coastal dunes, maritime forest, and tidal marshes. The preserve features 8 miles of hiking and nature trails, a butterfly garden, and boardwalks through the marsh with observation platforms for bird watching.</p><h2>Highlights</h2><ul><li>8 miles of nature trails through diverse coastal habitats</li><li>Elevated boardwalk through tidal marsh</li><li>Bird observation platforms (over 250 species recorded)</li><li>Butterfly garden with native plantings</li><li>Guided nature walks offered Saturday mornings</li></ul>",
+        "attraction_type": ["Outdoor Activity"],
+        "distance": "10-minute drive",
+        "address": "4500 Preserve Road, Gulf Shores",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80",
+          "alt": "Boardwalk trail through coastal nature preserve",
+          "title": "Coastal Nature Preserve"
+        }
+      }
+    },
+    {
+      "id": "about-page",
+      "type": "node.page",
+      "path": "/about",
+      "values": {
+        "title": "About Coastal Getaways",
+        "body": "<p>Coastal Getaways has been helping families and friends create unforgettable vacation memories since 2012. As locally owned and operated vacation rental managers, we know every property intimately and take pride in maintaining the highest standards of cleanliness, comfort, and guest service.</p><h2>Our Promise</h2><p>Every Coastal Getaways property is personally inspected before each guest arrival. We provide 24/7 guest support, complimentary amenities, and local expertise to ensure your stay is perfect from check-in to check-out.</p><h2>Why Book Direct</h2><ul><li>Best rate guarantee - lower prices than third-party sites</li><li>No service fees or hidden charges</li><li>Direct communication with our local team</li><li>Complimentary concierge services</li><li>Loyalty program for returning guests</li></ul>"
+      }
+    },
+    {
+      "id": "policies-page",
+      "type": "node.page",
+      "path": "/policies",
+      "values": {
+        "title": "Rental Policies & Guest Information",
+        "body": "<p>Please review our rental policies before booking. We want to ensure a smooth and enjoyable experience for all our guests.</p><h2>Check-In / Check-Out</h2><p>Check-in: 4:00 PM | Check-out: 10:00 AM<br>Early check-in and late check-out may be available upon request for an additional fee, subject to availability.</p><h2>Cancellation Policy</h2><p>Full refund if cancelled 30+ days before arrival. 50% refund if cancelled 14-29 days before arrival. No refund for cancellations less than 14 days before arrival. Travel insurance is strongly recommended.</p><h2>Pet Policy</h2><p>Select properties are pet-friendly (noted in the property listing). A non-refundable pet fee of $75 per pet applies. Maximum two pets per property. Pets must be supervised at all times.</p><h2>Security Deposit</h2><p>A refundable security deposit of $500 is collected at booking and returned within 7 days of check-out, pending property inspection.</p>"
+      }
+    }
+  ]
+}

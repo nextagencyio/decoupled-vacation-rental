@@ -1,0 +1,141 @@
+{
+  "data": {
+    "nodeAttractions": {
+      "__typename": "NodeAttractionConnection",
+      "nodes": [
+        {
+          "__typename": "NodeAttraction",
+          "id": "attraction-sunset-beach",
+          "title": "Sunset Beach",
+          "path": "/attractions/sunset-beach",
+          "body": {
+            "processed": "<p>Sunset Beach is the crown jewel of the Gulf Coast with three miles of pristine white sand and crystal-clear turquoise water. The beach is consistently rated among the top beaches in the country for its clean sand, gentle waves, and spectacular sunsets.</p><h2>Beach Activities</h2><ul><li>Swimming and wading in gentle surf</li><li>Shell collecting along the shoreline</li><li>Paddleboarding and kayak rentals available on the beach</li><li>Beach volleyball courts at the public access points</li><li>Seasonal lifeguard service from Memorial Day to Labor Day</li></ul>",
+            "summary": "Sunset Beach is the crown jewel of the Gulf Coast with three miles of pristine white sand and crystal-clear turquoise water. The beach is consistently rated among the top beaches in the country for it"
+          },
+          "attractionType": [
+            {
+              "id": "Beach",
+              "name": "Beach"
+            }
+          ],
+          "distance": "2-minute walk from most properties",
+          "address": "Sunset Beach Public Access, Gulf Shore Drive",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80",
+            "alt": "Pristine white sand beach with turquoise water",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeAttraction",
+          "id": "attraction-harbor-dining",
+          "title": "Harbor Dining District",
+          "path": "/attractions/harbor-dining-district",
+          "body": {
+            "processed": "<p>The Harbor Dining District is home to over a dozen waterfront restaurants offering everything from fresh-caught seafood and craft cocktails to wood-fired pizza and gourmet ice cream. Watch the fishing boats come in as you dine on the freshest Gulf seafood.</p><h2>Must-Try Restaurants</h2><ul><li><strong>The Catch</strong> - Fresh seafood with harbor views, known for grouper tacos</li><li><strong>Dockside Grill</strong> - Casual waterfront dining with live music nightly</li><li><strong>Bella Mare</strong> - Upscale Italian with a raw bar and extensive wine list</li><li><strong>Scoops</strong> - Artisan ice cream with unique coastal flavors</li></ul>",
+            "summary": "The Harbor Dining District is home to over a dozen waterfront restaurants offering everything from fresh-caught seafood and craft cocktails to wood-fired pizza and gourmet ice cream. Watch the fishing"
+          },
+          "attractionType": [
+            {
+              "id": "Restaurant",
+              "name": "Restaurant"
+            }
+          ],
+          "distance": "5-minute drive or 15-minute bike ride",
+          "address": "Harbor Point Boardwalk, 100-200 Marina Drive",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&q=80",
+            "alt": "Waterfront restaurants along the harbor at sunset",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeAttraction",
+          "id": "attraction-nature-preserve",
+          "title": "Coastal Nature Preserve",
+          "path": "/attractions/coastal-nature-preserve",
+          "body": {
+            "processed": "<p>The Coastal Nature Preserve protects 1,200 acres of coastal dunes, maritime forest, and tidal marshes. The preserve features 8 miles of hiking and nature trails, a butterfly garden, and boardwalks through the marsh with observation platforms for bird watching.</p><h2>Highlights</h2><ul><li>8 miles of nature trails through diverse coastal habitats</li><li>Elevated boardwalk through tidal marsh</li><li>Bird observation platforms (over 250 species recorded)</li><li>Butterfly garden with native plantings</li><li>Guided nature walks offered Saturday mornings</li></ul>",
+            "summary": "The Coastal Nature Preserve protects 1,200 acres of coastal dunes, maritime forest, and tidal marshes. The preserve features 8 miles of hiking and nature trails, a butterfly garden, and boardwalks thr"
+          },
+          "attractionType": [
+            {
+              "id": "Outdoor Activity",
+              "name": "Outdoor Activity"
+            }
+          ],
+          "distance": "10-minute drive",
+          "address": "4500 Preserve Road, Gulf Shores",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80",
+            "alt": "Boardwalk trail through coastal nature preserve",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
