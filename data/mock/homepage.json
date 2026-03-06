@@ -19,28 +19,28 @@
               "__typename": "ParagraphStatItem",
               "id": "stat-properties",
               "title": "",
-              "number": "24",
+              "number": "24", "value": "24",
               "label": "Properties"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-guests",
               "title": "",
-              "number": "8,500+",
+              "number": "8,500+", "value": "8,500+",
               "label": "Happy Guests"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-rating",
               "title": "",
-              "number": "4.9",
+              "number": "4.9", "value": "4.9",
               "label": "Average Rating"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-beach",
               "title": "",
-              "number": "2 min",
+              "number": "2 min", "value": "2 min",
               "label": "To the Beach"
             }
           ],
