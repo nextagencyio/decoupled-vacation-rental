@@ -82,11 +82,17 @@ export const GET_HOMEPAGE_DATA = gql`
         path
         heroTitle
         heroSubtitle
-        heroDescription { processed summary }
-        statsItems { ... on ParagraphStatItem { id title description { processed } icon } }
+        heroDescription { processed }
+        statsItems {
+          ... on ParagraphStatItem {
+            id
+            number
+            label
+          }
+        }
         featuredItemsTitle
         ctaTitle
-        ctaDescription { processed summary }
+        ctaDescription { processed }
         ctaPrimary
         ctaSecondary
       }
@@ -100,6 +106,7 @@ export const GET_NODE_BY_PATH = gql`
       ... on RouteInternal {
         entity {
           ... on NodePage {
+            __typename
             id
             title
             body {
@@ -107,6 +114,7 @@ export const GET_NODE_BY_PATH = gql`
             }
           }
           ... on NodeArticle {
+            __typename
             id
             title
             body {
@@ -132,6 +140,7 @@ export const GET_NODE_BY_PATH = gql`
             }
           }
           ... on NodeHomepage {
+            __typename
             id
             title
             heroTitle
@@ -139,16 +148,12 @@ export const GET_NODE_BY_PATH = gql`
             heroDescription {
               processed
             }
-            featuresTitle
-            featuresSubtitle
-            featuresItems {
-              ... on ParagraphFeatureItem {
+            featuredItemsTitle
+            statsItems {
+              ... on ParagraphStatItem {
                 id
-                title
-                description {
-                  processed
-                }
-                icon
+                number
+                label
               }
             }
             ctaTitle
@@ -157,6 +162,44 @@ export const GET_NODE_BY_PATH = gql`
             }
             ctaPrimary
             ctaSecondary
+          }
+          ... on NodeProperty {
+            __typename
+            id
+            title
+            path
+            body { processed summary }
+            propertyType { ... on TermPropertyType { name } }
+            nightlyRate
+            bedrooms
+            bathrooms
+            maxGuests
+            propertyFeatures
+            locationArea
+            image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
+            featured
+          }
+          ... on NodeAmenity {
+            __typename
+            id
+            title
+            path
+            body { processed summary }
+            amenityCategory { ... on TermAmenityCategory { name } }
+            availability
+            included
+            image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
+          }
+          ... on NodeAttraction {
+            __typename
+            id
+            title
+            path
+            body { processed summary }
+            attractionType { ... on TermAttractionType { name } }
+            distance
+            address
+            image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
           }
         }
       }
@@ -174,7 +217,7 @@ export const GET_PROPERTIES = gql`
         created { timestamp }
         ... on NodeProperty {
           body { processed summary }
-          propertyType
+          propertyType { ... on TermPropertyType { name } }
           nightlyRate
           bedrooms
           bathrooms
@@ -198,16 +241,16 @@ export const GET_PROPERTY_BY_PATH = gql`
             id
             title
             path
-          body { processed summary }
-          propertyType
-          nightlyRate
-          bedrooms
-          bathrooms
-          maxGuests
-          propertyFeatures
-          locationArea
-          image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
-          featured
+            body { processed summary }
+            propertyType { ... on TermPropertyType { name } }
+            nightlyRate
+            bedrooms
+            bathrooms
+            maxGuests
+            propertyFeatures
+            locationArea
+            image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
+            featured
           }
         }
       }
@@ -225,7 +268,7 @@ export const GET_AMENITIES = gql`
         created { timestamp }
         ... on NodeAmenity {
           body { processed summary }
-          amenityCategory
+          amenityCategory { ... on TermAmenityCategory { name } }
           availability
           included
           image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
@@ -244,11 +287,11 @@ export const GET_AMENITY_BY_PATH = gql`
             id
             title
             path
-          body { processed summary }
-          amenityCategory
-          availability
-          included
-          image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
+            body { processed summary }
+            amenityCategory { ... on TermAmenityCategory { name } }
+            availability
+            included
+            image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
           }
         }
       }
@@ -266,7 +309,7 @@ export const GET_ATTRACTIONS = gql`
         created { timestamp }
         ... on NodeAttraction {
           body { processed summary }
-          attractionType
+          attractionType { ... on TermAttractionType { name } }
           distance
           address
           image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
@@ -285,11 +328,11 @@ export const GET_ATTRACTION_BY_PATH = gql`
             id
             title
             path
-          body { processed summary }
-          attractionType
-          distance
-          address
-          image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
+            body { processed summary }
+            attractionType { ... on TermAttractionType { name } }
+            distance
+            address
+            image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
           }
         }
       }

@@ -18,10 +18,10 @@ export interface DrupalNode {
   id: string
   title: string
   path: string
-  created: {
+  created?: {
     timestamp: number
   }
-  changed: {
+  changed?: {
     timestamp: number
   }
 }
@@ -31,18 +31,7 @@ export interface DrupalArticle extends DrupalNode {
     processed: string
     summary?: string
   }
-  image?: {
-    url: string
-    alt?: string
-    width?: number
-    height?: number
-    variations?: Array<{
-      name: string
-      url: string
-      width: number
-      height: number
-    }>
-  }
+  image?: DrupalImage
 }
 
 export interface ArticleTeaserData {
@@ -57,30 +46,30 @@ export interface DrupalPage extends DrupalNode {
   }
 }
 
+export interface DrupalTermRef {
+  name: string
+}
+
+export interface DrupalStatItem {
+  id: string
+  number?: string
+  label?: string
+}
+
 export interface DrupalHomepage extends DrupalNode {
   heroTitle?: string
   heroSubtitle?: string
   heroDescription?: {
     processed: string
   }
-  featuresTitle?: string
-  featuresSubtitle?: string
-  featuresItems?: DrupalFeature[]
+  featuredItemsTitle?: string
+  statsItems?: DrupalStatItem[]
   ctaTitle?: string
   ctaDescription?: {
     processed: string
   }
   ctaPrimary?: string
   ctaSecondary?: string
-}
-
-export interface DrupalFeature {
-  id: string
-  title: string
-  description?: {
-    processed: string
-  }
-  icon?: string
 }
 
 export interface HomepageData {
@@ -91,20 +80,21 @@ export interface HomepageData {
 
 // Feature color type
 export type FeatureColor = 'blue' | 'green' | 'purple' | 'yellow' | 'red' | 'indigo'
+
 export interface DrupalProperty {
   id: string
   title: string
   path?: string
   body?: { processed: string; summary?: string }
-  propertyType?: string
+  propertyType?: DrupalTermRef[]
   nightlyRate?: string
   bedrooms?: string
   bathrooms?: string
   maxGuests?: string
-  propertyFeatures?: string
+  propertyFeatures?: string[]
   locationArea?: string
-  image?: { url: string; alt: string; width?: number; height?: number; variations?: { name: string; url: string; width: number; height: number }[] }
-  featured?: string
+  image?: DrupalImage
+  featured?: boolean
 }
 
 export interface PropertiesData {
@@ -118,10 +108,10 @@ export interface DrupalAmenity {
   title: string
   path?: string
   body?: { processed: string; summary?: string }
-  amenityCategory?: string
+  amenityCategory?: DrupalTermRef[]
   availability?: string
-  included?: string
-  image?: { url: string; alt: string; width?: number; height?: number; variations?: { name: string; url: string; width: number; height: number }[] }
+  included?: boolean
+  image?: DrupalImage
 }
 
 export interface AmenitiesData {
@@ -135,10 +125,10 @@ export interface DrupalAttraction {
   title: string
   path?: string
   body?: { processed: string; summary?: string }
-  attractionType?: string
+  attractionType?: DrupalTermRef[]
   distance?: string
   address?: string
-  image?: { url: string; alt: string; width?: number; height?: number; variations?: { name: string; url: string; width: number; height: number }[] }
+  image?: DrupalImage
 }
 
 export interface AttractionsData {
